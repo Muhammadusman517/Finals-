@@ -3,7 +3,6 @@
 #include <ctime>
 #include <cstdlib>
 #include <string>
-#include <unistd.h>
 #include <windows.h>
 
 using namespace std;
@@ -117,8 +116,8 @@ struct Player {
     string playerClass;
     string weapon;
     int health;
-    int experiencePointsWithSubtraction; // Experience points with subtraction during level-up
-    int totalExperiencePoints = 0; // Total accumulated experience points without subtraction
+    int experiencePointsWithSubtraction; 
+    int totalExperiencePoints = 0; 
     int damage;
     int classChoice;
     int weaponChoice;
@@ -167,7 +166,7 @@ void selectWeapon(Player& player) {
             cout << "1. Sword" << endl;
             cout << "2. Spear" << endl;
             cout << "3. Axe" << endl;
-            player.classChoice = 1;  // Set class to Warrior
+            player.classChoice = 1;  
     }
 
     cout << "Select Weapon: ";
